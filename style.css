@@ -1,0 +1,108 @@
+.left {
+    float: left;
+}
+.img {
+    border: 0;
+}
+    #navigation {
+    width: 200px;
+    }
+    #navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    #navigation li {
+    border-bottom: 1px solid #ED9F9F;
+    }
+    #navigation li a:link, #navigation li a:visited {
+    font-size: 90%;
+    display: block;
+    padding: 0.4em 0 0.4em 0.5em;
+    border-left: 12px solid maroon;
+    border-right: 1px solid maroon;
+    background-color: rgb(104, 16, 16);
+    color: beige;
+    text-decoration: none;
+    }
+    #navigation li a:hover {
+        color: yellow;
+        text-decoration: underline;
+    }
+body {
+  background: url('fon2.png') center/cover no-repeat,
+    url('fon1.jpg') center/cover no-repeat; 
+  background-color: maroon;
+}
+.ssylka {
+    color: blue; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+a:hover {
+    color: red; /* Цвет ссылки при наведении на нее курсора мыши */
+}
+.underline {
+    text-decoration-line: underline; /* Линия под заголовком */
+    text-decoration-color: red; /* Цвет линии под заголовком */ 
+}
+b {
+    font-size: 150%; /* Размер шрифта заголовка */
+}
+.none {
+    list-style-type: none; /* Убираем маркеры списка */ 
+}
+.none:before {
+    content: "¶ "; /* Ставим свои маркеры списка */ 
+}
+p {
+    line-height: 200%; /* Изменение межстрочного интервала */
+    margin-top: 0em; 
+    margin-bottom: 0em; 
+}
+img {
+    border: 8px maroon ridge;
+    margin-right: 20px;
+}
+ul li:first-child {
+    color: red; /* Меняем только первый элемент списка */
+}
+.center {
+    text-align: center; /* Центрирование текста */ 
+}
+.color {
+    color: beige;
+}
+fieldset {
+    margin: auto;
+    height: 120px;
+    width: 300px;
+}
+input.right {
+    margin-top: 3px;
+    float:right;
+}
+.btn {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+.block {
+    background-color: #0000004b;
+    border: 2px solid #b92020;
+    border-radius: 10px;
+    padding: 2px 6px 2px 6px;
+    display: block;
+}
+* {
+    margin: 0; /* Убираем отступы по умолчанию */ 
+    padding: 0;
+}
+.stroka
+{
+    background-color: #0000004b;
+    border: 2px solid #b92020;
+    border-radius: 10px;
+    padding: 2px 6px 2px 6px;
+	display: inline-block;
+	width: auto;
+}
