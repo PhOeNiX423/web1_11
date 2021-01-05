@@ -8,5 +8,6 @@ $(document).ready(function () {
     $('h1').dblclick(function(){
         $(this).toggleClass('blue')
     });
-    
+    //.hide() 
+    $('#hide').hide();
 });
