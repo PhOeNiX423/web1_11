@@ -3,14 +3,12 @@
 
 <head>
     <title> Web 1_2 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <link rel="stylesheet" href="flip-clock.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        p {
-            font-size: 5mm;
-        }
-
-    </style>
     <script src='jquery-3.5.1.js'></script>
+    <script src='flip-clock.js'></script>
     <script src='main.js'></script>
 </head>
 
@@ -27,7 +25,7 @@
     <div><button class="hide">Спрятать картинку</button>
         <button class='show'>Показать картинку</button>
     </div>
-    <img class="hide left" height="200" src="fox.jpg" alt="Лиса">
+    <img class="hide left board" height="200" src="fox.jpg" alt="Лиса">
     <p style="color:beige" class="block"> <b>Лиси́ца</b> — общее название
         нескольких видов млекопитающих семейства псовые.
         Лишь 10 видов этой группы относят к роду собственно лисиц (лат. <i>Vulpes</i>). Наиболее
@@ -58,10 +56,10 @@
         <li class="none">Дарвиновская лисица; </li>
         <li class="none">Секуранская лисица. </li>
     </ul>
-    <p class="center img"><a href="https://yandex.ru/"><img src="securan.jpg" width="300" alt="Секуранская лисица"></a></p>
+    <p class="center img"><a href="https://yandex.ru/"><img class='board' src="securan.jpg" width="300" alt="Секуранская лисица"></a></p>
     <form class="center">
         <input class='imya' type='text' placeholder="Введи своё имя">
-        <p class="center"><strong>Приветствую тебя<span id='userName'></span></strong></p>
+       <p class="center"><strong>Приветствую тебя<span id='userName'></span></strong></p> 
         <fieldset>
             <legend>Вход на сайт</legend>
             <p><label for="login">Логин:</label> <input class="right" id="login"></p>
@@ -83,21 +81,43 @@
     <input id="check1" type="checkbox" checked="checked">
     <label style='font-size: 25px;' for="check1">Check me</label>
     <p class='check1'></p>
-    
+
     <ul class="list l1">
-   <li class="item"> Высоко </li>	
-   <li class="item"> Быстро </li>	
-   <li class="item"> Сильно </li>	
- </ul>
- <ul class="list l2">
-   <li class="item"> Выше </li>	
-   <li class="item"> Быстрее </li>	
-   <li class="item"> Сильнее </li>	
- </ul>
-<div class="ui-widget" style='margin-top: 90px; margin-bottom: 90px;'>
-  <label for="tags">Tags: </label>
-  <input id="tags">
-</div>
+        <li class="item"> Высоко </li>
+        <li class="item"> Быстро </li>
+        <li class="item"> Сильно </li>
+    </ul>
+    <ul class="list l2">
+        <li class="item"> Выше </li>
+        <li class="item"> Быстрее </li>
+        <li class="item"> Сильнее </li>
+    </ul>
+    <div data-role="cube"></div>
+    <div>
+        <div class='selected' data-role="tile" data-size="wide"><span class="branding-bar">Safari</span><img src="iconfinder_logo_brand_brands_logos_safari_2993674.png" class="icon"></div>
+        <div data-role="tile" data-size="large" style='background-color: #f1c40f'>
+            <div class="slide-front">...</div>
+            <div class="slide-back">...</div>
+            <span class="branding-bar">Twitch</span><img src="iconfinder_twitch-social-network-brand-logo_1829982.png" class="icon">
+        </div>
+    </div>
+    <div data-role="tile" data-size="wide" data-effect="image-set">
+        <img src="image1.jpg">
+        <img src="image2.jpg">
+        <img src="image3.jpg">
+        <img src="image4.jpg">
+        <img src="image5.jpg">
+    </div>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <ul style="margin-top: 3%;" class="flip-clock-container flip-example">
+        <li class="flip-item-seconds">23</li>
+        <li class="flip-item-minutes">38</li>
+        <li class="flip-item-hours">23</li>
+        <li class="flip-item-days">01</li>
+    </ul>
+
+    <p class='datepicker' style="margin-top: 3%;"><input type="text" id="datepicker"></p>
+    
 </body>
 
 </html>

@@ -19,7 +19,7 @@ $(document).ready(function () {
         $('img.hide').show();
     });
     //.change() 
-    $('input').change(function () {
+    $('input.imya').change(function () {
         //.text() 
         $('#userName').text(', ' + $(this).val() + '!');
     });
@@ -47,11 +47,12 @@ $(document).ready(function () {
         var n = parseInt(j.text(), 10);
         j.text(n + 1);
     };
-    //.prop()
-    //.attr()
+
     $("input#check1").change(function () {
         var $input = $(this);
+        //.attr()
         $("p.check1").html(".attr('checked'): <b>" + $input.attr('checked') + "</b><br>" +
+            //.prop()
             ".prop('checked'): <b>" + $input.prop('checked') + "</b><br>" +
             ".is(':checked'): <b>" + $input.is(':checked')) + "</b>";
     }).change();
@@ -67,7 +68,18 @@ $(document).ready(function () {
     $('.item').filter(':even');
     $(".list .item:even").append(" первый!").css("background-color", "#cceecc");
     $(".list .item:odd").append(" второй!").css("background-color", "#eeeeee");;
-    //Виджет
-    //Плагин
-  
+    //Виджет - DatePicker
+    $("#datepicker").datepicker();
+    //Плагинs - Metro UI 4 (css), Flip-clock
+    $('.flip-demo').on('done', function () {
+        console.log('doooooonnnnnee!');
+    });
+
+    $('.flip-demo').on('before<a href="https://www.jqueryscript.net/tags.php?/Flip/">Flip</a>ping', function (e, data) {
+        console.log('beforeFlipping:', data);
+    });
+
+    $('.flip-demo').on('afterFlipping', function (e, data) {
+        console.log('afterFlipping:', data);
+    });
 });

@@ -59,7 +59,7 @@ p {
     margin-top: 0em; 
     margin-bottom: 0em; 
 }
-img {
+img.board {
     border: 8px maroon ridge;
     margin-right: 20px;
 }
@@ -112,3 +112,6 @@ input.right {
 .click {
     font-size: 25px;
 }
+p {
+            font-size: 5mm;
+        }
