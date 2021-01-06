@@ -8,6 +8,7 @@
         p {
             font-size: 5mm;
         }
+
     </style>
     <script src='jquery-3.5.1.js'></script>
     <script src='main.js'></script>
@@ -55,8 +56,9 @@
         <li class="none">Секуранская лисица. </li>
     </ul>
     <p class="center img"><a href="https://yandex.ru/"><img src="securan.jpg" width="300" alt="Секуранская лисица"></a></p>
-    <p class="center"><strong>Секуранская лисица</strong></p>
-    <form>
+    <form class="center">
+        <input type='text' placeholder="Введи своё имя">
+        <p class="center"><strong>Приветствую тебя<span id='userName'></span></strong></p>
         <fieldset>
             <legend>Вход на сайт</legend>
             <p><label for="login">Логин:</label> <input class="right" id="login"></p>
@@ -64,8 +66,10 @@
             <p class="center"><input class="btn" type="submit" value="Вход"></p>
         </fieldset>
     </form>
-    <p>Этот параграф содержит <a class="stroka" href="https://vk.com/">ссылку</a>, которая показана как строковый элемент.</p>
-    <p>Этот параграф содержит <a class="block" href="https://vk.com/">ссылку</a>, которая показана как блочный элемент.</p>
+    <div>
+        <p>Этот параграф содержит <a class="stroka" href="https://vk.com/">ссылку</a>, которая показана как строковый элемент.</p>
+        <p>Этот параграф содержит <a class="block" href="https://vk.com/">ссылку</a>, которая показана как блочный элемент.</p>
+    </div>
 </body>
 
 </html>
