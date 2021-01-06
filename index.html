@@ -25,7 +25,7 @@
         </ul>
     </div>
     <div><button class="hide">Спрятать картинку</button>
-    <button class='show'>Показать картинку</button>
+        <button class='show'>Показать картинку</button>
     </div>
     <img class="hide left" height="200" src="fox.jpg" alt="Лиса">
     <p style="color:beige" class="block"> <b>Лиси́ца</b> — общее название
@@ -53,14 +53,14 @@
         <li>Бенгальская лисица (<i>Vulpes bengalensis</i>).</li>
     </ul>
     <p> А эти красавицы из рода Южноамериканских лисиц:</p>
-    <ul style="list-style-type:circle">
+    <ul class='find' style="list-style-type:circle">
         <li class="none">Андская лисица; </li>
         <li class="none">Дарвиновская лисица; </li>
         <li class="none">Секуранская лисица. </li>
     </ul>
     <p class="center img"><a href="https://yandex.ru/"><img src="securan.jpg" width="300" alt="Секуранская лисица"></a></p>
     <form class="center">
-        <input class = 'imya' type='text' placeholder="Введи своё имя">
+        <input class='imya' type='text' placeholder="Введи своё имя">
         <p class="center"><strong>Приветствую тебя<span id='userName'></span></strong></p>
         <fieldset>
             <legend>Вход на сайт</legend>
@@ -73,13 +73,31 @@
         <b>Click</b> to change the html.
     </p>
     <div>
-        <p>Этот параграф содержит <a class="stroka" href="https://vk.com/">ссылку</a>, которая показана как строковый элемент.</p>
+        <p><span class='wrap'>jQuery</span> Этот параграф содержит <a class="stroka" href="https://vk.com/">ссылку</a>, которая показана как строковый элемент.</p>
         <p>Этот параграф содержит <a class="block" href="https://vk.com/">ссылку</a>, которая показана как блочный элемент.</p>
     </div>
-    
+
     <button class='trig' style='margin-top: 20px; text-align: center; border-radius: 5px; background: white; width: 100px; height: 40px;'>Click me!</button>
 
-    <div style='width: 300px; height: 30px; font-size: 20px;'><span class='trig' style="color: red;">0</span> clicks you made</div>
+    <div class='selec' style='width: 300px; height: 30px; font-size: 20px;'><span class='trig' style="color: red;">0</span> clicks you made</div>
+    <input id="check1" type="checkbox" checked="checked">
+    <label style='font-size: 25px;' for="check1">Check me</label>
+    <p class='check1'></p>
+    
+    <ul class="list l1">
+   <li class="item"> Высоко </li>	
+   <li class="item"> Быстро </li>	
+   <li class="item"> Сильно </li>	
+ </ul>
+ <ul class="list l2">
+   <li class="item"> Выше </li>	
+   <li class="item"> Быстрее </li>	
+   <li class="item"> Сильнее </li>	
+ </ul>
+<div class="ui-widget" style='margin-top: 90px; margin-bottom: 90px;'>
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
 </body>
 
 </html>
