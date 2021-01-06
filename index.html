@@ -24,7 +24,10 @@
             <li><a href="#">Галерея</a></li>
         </ul>
     </div>
-    <img class="left" height="200" src="fox.jpg" alt="Лиса">
+    <div><button class="hide">Спрятать картинку</button>
+    <button class='show'>Показать картинку</button>
+    </div>
+    <img class="hide left" height="200" src="fox.jpg" alt="Лиса">
     <p style="color:beige" class="block"> <b>Лиси́ца</b> — общее название
         нескольких видов млекопитающих семейства псовые.
         Лишь 10 видов этой группы относят к роду собственно лисиц (лат. <i>Vulpes</i>). Наиболее
@@ -57,7 +60,7 @@
     </ul>
     <p class="center img"><a href="https://yandex.ru/"><img src="securan.jpg" width="300" alt="Секуранская лисица"></a></p>
     <form class="center">
-        <input type='text' placeholder="Введи своё имя">
+        <input class = 'imya' type='text' placeholder="Введи своё имя">
         <p class="center"><strong>Приветствую тебя<span id='userName'></span></strong></p>
         <fieldset>
             <legend>Вход на сайт</legend>
@@ -66,10 +69,17 @@
             <p class="center"><input class="btn" type="submit" value="Вход"></p>
         </fieldset>
     </form>
+    <p style='font-size:25px;' class='html'>
+        <b>Click</b> to change the html.
+    </p>
     <div>
         <p>Этот параграф содержит <a class="stroka" href="https://vk.com/">ссылку</a>, которая показана как строковый элемент.</p>
         <p>Этот параграф содержит <a class="block" href="https://vk.com/">ссылку</a>, которая показана как блочный элемент.</p>
     </div>
+    <input class='inp' type='text' placeholder="Введи">
+    <button class='trig' style='margin-top: 20px; text-align: center; border-radius: 5px; background: white; width: 100px; height: 40px;'>Click me!</button>
+
+    <div style='width: 300px; height: 30px; font-size: 20px;'><span class='trig' style="color: red;">0</span> clicks you made</div>
 </body>
 
 </html>
